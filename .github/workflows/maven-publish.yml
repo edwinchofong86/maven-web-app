@@ -4,8 +4,8 @@
 name: Maven Package
 
 on:
-  release:
-    types: push
+  branch_protection_rule:
+    types: [created, deleted, edited]
 
 jobs:
   build:
